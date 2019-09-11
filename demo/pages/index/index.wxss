@@ -1,0 +1,14 @@
+/**index.wxss**/
+
+.list {
+  margin: 32rpx;
+}
+
+.item {
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0rpx 2rpx 10rpx 0rpx rgba(211, 211, 211, 0.68);
+  border-radius: 8rpx;
+}
