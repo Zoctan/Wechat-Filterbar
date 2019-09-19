@@ -5,7 +5,7 @@
   background: #fff;
 }
 
-.navItem {
+.nav-item {
   display: flex;
   flex: 1;
   text-align: center;
@@ -16,16 +16,16 @@
   margin: 20rpx 0;
 }
 
-.navItem.active .content {
+.nav-item.active .content {
   color: #fa871e;
 }
 
-.navItem.active .icon {
+.nav-item.active .icon {
   border-bottom: 8rpx solid #fa871e;
   border-top: 0;
 }
 
-.borderRight {
+.border-right {
   border-right: 1rpx solid #e6e6e6;
 }
 
@@ -33,14 +33,14 @@
   display: inline-block;
 }
 
-.icon.dropdownIcon {
+.icon.dropdown-icon {
   display: inline-block;
   border: 8rpx solid transparent;
   border-top: 8rpx solid #9b9b9b;
   margin-left: 10rpx;
 }
 
-.icon.filterIcon {
+.icon.filter-icon {
   width: 8rpx;
   height: 8rpx;
   border-top: 4rpx solid #9b9b9b;
@@ -61,7 +61,7 @@
 
 .filter {
   width: 100%;
-  height: auto;
+  max-height: 630rpx;
   z-index: 2;
   position: absolute;
   overflow-y: scroll;
@@ -109,7 +109,7 @@
   color: #fa871e;
 }
 
-.filter .multiItem {
+.filter .multi-item {
   float: left;
   width: 100%;
   height: 100%;
@@ -117,18 +117,18 @@
   font-size: 32rpx;
 }
 
-.multiItem .header {
+.multi-item .header {
   padding: 5rpx 0 0 15rpx;
 }
 
-.multiItem .body {
+.multi-item .body {
   padding-left: 15rpx;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
 
-.multiItem .body .radio {
+.multi-item .body .radio {
   margin: 8rpx 12px 16rpx 0;
   font-size: 28rpx;
   padding: 8rpx 16rpx 8rpx 16rpx;
@@ -153,12 +153,12 @@
   display: flex;
 }
 
-.buttons .buttonReset {
+.buttons .reset {
   flex: 1;
   border-top: 1rpx solid #ddd;
 }
 
-.buttons .buttonConfirm {
+.buttons .confirm {
   flex: 1;
   color: #fff;
   border-top: 1rpx solid #fa871e;

@@ -1,19 +1,19 @@
 <view class="nav">
-  <view class="navItem borderRight {{ twoStage ? 'active' : '' }}" bindtap="onTwoStageActive">
+  <view class="nav-item border-right {{ twoStage ? 'active' : '' }}" bindtap="onTwoStageActive">
     <view class="content">{{ twoStageDataLeft.label }}</view>
-    <view class="icon dropdownIcon" />
+    <view class="icon dropdown-icon" />
   </view>
-  <view class="navItem borderRight {{ radio ? 'active' : '' }}" bindtap="onRadioActive">
+  <view class="nav-item border-right {{ radio ? 'active' : '' }}" bindtap="onRadioActive">
     <view class="content">{{ radioData.label }}</view>
-    <view class="icon dropdownIcon" />
+    <view class="icon dropdown-icon" />
   </view>
-  <view class="navItem borderRight {{ sort ? 'active' : '' }}" bindtap="onSortActive">
+  <view class="nav-item border-right {{ sort ? 'active' : '' }}" bindtap="onSortActive">
     <view class="content">{{ sortData.label }}</view>
-    <view class="icon dropdownIcon" />
+    <view class="icon dropdown-icon" />
   </view>
-  <view class="navItem {{ filter ? 'active' : '' }}" bindtap="onFilterActive">
+  <view class="nav-item {{ filter ? 'active' : '' }}" bindtap="onFilterActive">
     <view class="content">{{ filterData.label }}</view>
-    <view class="icon filterIcon" />
+    <view class="icon filter-icon" />
   </view>
 </view>
 
@@ -41,7 +41,7 @@
 <view class="filter {{ filter ? 'show' : 'hide' }} ">
   <scroll-view scroll-y bindscroll="onFilterScroll">
     <block wx:for="{{ filterData.children }}" wx:for-item="group" wx:key="unique">
-      <view class="multiItem">
+      <view class="multi-item">
         <view class="header">
           <div class="label">{{ group.label }}</div>
         </view>
@@ -54,8 +54,8 @@
     </block>
   </scroll-view>
   <div class="buttons">
-    <view class="buttonReset" bindtap="onSelectReset">重置</view>
-    <view class="buttonConfirm" bindtap="onSelectConfirm">确定</view>
+    <view class="reset" bindtap="onSelectReset">重置</view>
+    <view class="confirm" bindtap="onSelectConfirm">确定</view>
   </div>
 </view>
 
