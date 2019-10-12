@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   z-index: 99;
   display: flex;
   border-bottom: 1rpx solid #d1d3d4;
@@ -25,7 +26,7 @@
   border-top: 0;
 }
 
-.border-right {
+.borders-right {
   border-right: 1rpx solid #e6e6e6;
 }
 
@@ -33,14 +34,14 @@
   display: inline-block;
 }
 
-.icon.dropdown-icon {
+.icon.dropdownIcon {
   display: inline-block;
   border: 8rpx solid transparent;
   border-top: 8rpx solid #9b9b9b;
   margin-left: 10rpx;
 }
 
-.icon.filter-icon {
+.icon.filterIcon {
   width: 8rpx;
   height: 8rpx;
   border-top: 4rpx solid #9b9b9b;
@@ -61,7 +62,7 @@
 
 .filter {
   width: 100%;
-  max-height: 630rpx;
+  max-height: 850rpx;
   z-index: 2;
   position: absolute;
   overflow-y: scroll;

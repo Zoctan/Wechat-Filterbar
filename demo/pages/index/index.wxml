@@ -1,11 +1,7 @@
 <view class="container">
-  <filterbar twoStageDataLeft="{{ twoStageDataLeft }}" radioData="{{ radioData }}" sortData="{{ sortData }}" filterData="{{ filterData }}" top="310rpx" bind:filter="onFilter" />
+  <filterbar mode="position" top="310rpx" bind:confirm="onFilterConfirm" bind:multiChange="onMultiChange" />
   <view class="list">
-    <view class="item">
-      ABC
-    </view>
-    <view class="item">
-      CDE
-    </view>
+    <view class="item">ABC</view>
+    <view class="item">CDE</view>
   </view>
 </view>
